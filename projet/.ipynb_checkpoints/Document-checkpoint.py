@@ -1,4 +1,3 @@
-# Document.py
 from datetime import datetime
 
 class Document:
@@ -41,9 +40,6 @@ class Document:
         date_col="Date",
         url_col="URL"
     ):
-        """
-        Generic CSV fetcher: returns raw rows as dicts
-        (NOT Document objects)
-        """
+        
         df = pd.read_csv(file_path)
         return df
